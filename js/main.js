@@ -46,4 +46,12 @@ function oppClick(numericCode) {
   if (flag === 1) {
     display.innerHTML = num1 + oppString;
   }
+
+  if (flag === 1 && num1 === "") {
+    clearButton();
+  }
+
+  if (equalTo === 1) {
+    clearButton();
+  }
 }

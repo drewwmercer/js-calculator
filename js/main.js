@@ -25,3 +25,26 @@ function setValue(number) {
         display.innerHTML = 'Maximum limit of digits reached';
     }
 }
+
+function oppClick(numericCode) {
+    operator = numericCode;
+    var oppString = "";
+    flag = 1;
+        if(operator === 4) {
+            display.innerHTML += "/";
+            oppString = "/";
+        }
+        else if(operator === 3) {
+            display.innerHTML += "*";
+            oppString = "*";
+        }
+        else if(operator === 2) {
+            display.innerHTML += "-";
+            oppString = "-";
+        }
+        else {
+            display.innerHTML += "+";
+            oppString = "+";
+        }
+
+}

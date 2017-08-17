@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Calculator</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Header  -->
+
+    <div class="header">
+        <h1>JavaScript Calculator</h1>
+    </div> 
+    <!-- end of header div -->
+    <div class="container" id="calculator">
+        <!--  display div -->
+         <div class="row col-md-12 display" id="display">
+        </div> 
+        <!-- end of row-->
+        <!-- div with clear and del buttons -->
+        <div class="row">
+            <div class="col-md-12 clearBackspace">
+                <button class="Backspace" id="backspace" onclick="backspace()">Del</button>
+                <button class="clear-button" onclick="clearButton()" id="clear">C</button>
+            </div> 
+            <!-- end of col-md-12 -->
+        </div> 
+        <!-- end of backspace and clear button row -->
+        <!-- numbers and operators -->
+        <div class="row" id="numbers-row">
+            <div class="col-md-12">
+                <button class="num-button" id="button" onclick="setValue(7)">7</button>
+                <button class="num-button" onclick="setValue(8)">8</button>
+                <button class="num-button" onclick="setValue(9)">9</button>
+                <button class="opp" onclick="oppClick(4)">/</button>
+            </div>
+            <!-- end of col-md-12 -->
+            <div class="col-md-12">
+                <button class="num-button" onclick="setValue(4);">4</button>
+                <button class="num-button" onclick="setValue(5)">5</button>
+                <button class="num-button" onclick="setValue(6)">6</button>
+                <button class="opp" onclick="oppClick(3)">x</button>
+            </div>
+            <!-- end of col-md-12 -->
+            <div class="col-md-12">
+                <button class="num-button" onclick="setValue(1);">1</button>
+                <button class="num-button" onclick="setValue(2)">2</button>
+                <button class="num-button" onclick="setValue(3)">3</button>
+                <button class="opp" id="minus" onclick="oppClick(2)">-</button>
+            </div>
+            <!-- end of col-md-12 -->
+            <div class="col-md-12">
+                <button class="num-button" onclick="setValue(0)">0</button>
+                <button class="opp" id="decimal" onclick="setDecimal('.')">.</button>
+                <button class="num-button" onclick="equalClick()">=</button>
+                <button class="opp" onclick="oppClick(1)">+</button>
+            </div>
+             <!-- end of col-md-12 -->
+        </div> 
+        <!-- end of row for numbers and operators -->
+    </div> 
+    <!-- end of div calculator container-->
+
+    <!-- jQuery Version 3.1.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Tether -->
+    <script src="js/tether.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

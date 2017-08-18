@@ -55,3 +55,31 @@ function oppClick(numericCode) {
     clearButton();
   }
 }
+
+function equalClick() {
+  equalTo = 1;
+  num1 = parseFloat(num1);
+  num2 = parseFloat(num2);
+  var result = "";
+  var roundedResult = "";
+
+  switch (true) {
+    case operator === 1:
+      result = num1 + num2;
+      break;
+
+    case operator === 2:
+      result = num1 - num2;
+      break;
+
+    case operator === 3:
+      result = num1 * num2;
+      break;
+
+    case operator === 4:
+      result = num1 / num2;
+  }
+  roundedResult = result.toFixed(4);
+  display.innerHTML = roundedResult;
+  
+}

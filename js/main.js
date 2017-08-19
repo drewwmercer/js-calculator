@@ -119,3 +119,15 @@ function backspace() {
     setOppString();
   }
 }
+function setDecimal() {
+  if(flag === 0) {
+    if(num1 === "") {
+      num1 = "0."
+      display.innerHTML = num1;
+    }
+
+      if(num1.indexOf('.') === -1) {
+        
+      }
+  }
+}

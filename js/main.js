@@ -120,14 +120,26 @@ function backspace() {
   }
 }
 function setDecimal() {
-  if(flag === 0) {
-    if(num1 === "") {
-      num1 = "0."
+  if (flag === 0) {
+    if (num1 === "") {
+      num1 = "0.";
       display.innerHTML = num1;
     }
 
-      if(num1.indexOf('.') === -1) {
-        
+    if (num1.indexOf(".") === -1) {
+      num1 += ".";
+      display.innerHTML = num1;
+    }
+    if (flag === 1) {
+      if (num2 === "") {
+        num2 = "0.";
+        display.innerHTML += num2;
       }
+      if (num2.indexOf(".") === -1) {
+        num2 += ".";
+        display.innerHTML = num1 + operator + num2;
+        setOppString();
+      }
+    }
   }
 }

@@ -104,6 +104,9 @@ function backspace() {
 
   if(flag === 0){
     temp1 = num1.substring(0, num1.length-1);
-    
+    display.innerHTML = temp1;
+    num1 = temp1;
   }
+
+  
 }

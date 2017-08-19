@@ -82,8 +82,15 @@ function equalClick() {
   roundedResult = result.toFixed(4);
   display.innerHTML = roundedResult;
 
-  if(roundedResult === "NaN") {
+  if (roundedResult === "NaN") {
     display.innerHTML = "Not a valid calculation";
   }
+}
 
+function clearButton() {
+  num1 = "";
+  num2 = "";
+  flag = 0;
+  display.innerHTML = "";
+  equalTo = 0;
 }

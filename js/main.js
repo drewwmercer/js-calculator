@@ -143,3 +143,15 @@ function setDecimal() {
     }
   }
 }
+
+function setOppString() {
+  if (operator === 1) {
+    display.innerHTML = num1 + "+" + num2;
+  } else if (operator === 2) {
+    display.innerHTML = num1 + "-" + num2;
+  } else if (operator === 3) {
+    display.innerHTML = num1 + "*" + num2;
+  } else if (operator === 4) {
+    display.innerHTML = num1 + "/" + num2;
+  }
+}

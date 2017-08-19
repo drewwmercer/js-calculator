@@ -94,3 +94,16 @@ function clearButton() {
   display.innerHTML = "";
   equalTo = 0;
 }
+
+function backspace() {
+  var temp1 = "";
+  var temp2 = "";
+  if (equalTo === 1) {
+    clearButton();
+  }
+
+  if(flag === 0){
+    temp1 = num1.substring(0, num1.length-1);
+    
+  }
+}

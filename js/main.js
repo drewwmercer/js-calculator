@@ -107,6 +107,9 @@ function backspace() {
     display.innerHTML = temp1;
     num1 = temp1;
   }
+  if(flag === 1) {
+    display.innerHTML = num1;
+    flag = 0;
+  }
 
-  
 }

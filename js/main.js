@@ -102,14 +102,20 @@ function backspace() {
     clearButton();
   }
 
-  if(flag === 0){
-    temp1 = num1.substring(0, num1.length-1);
+  if (flag === 0) {
+    temp1 = num1.substring(0, num1.length - 1);
     display.innerHTML = temp1;
     num1 = temp1;
   }
-  if(flag === 1) {
+  if (flag === 1) {
     display.innerHTML = num1;
     flag = 0;
   }
-
+  if (num2 !== "") {
+    temp2 = num2.substring(0, num2.length - 1);
+    display.innerHTML = num1 + operator + num2;
+    num2 = temp2;
+    flag = 1;
+    setOppString();
+  }
 }
